@@ -136,13 +136,13 @@ for i in range(10):
 
 cprint("Attention!", 'red', attrs=['bold'], file=sys.stderr)
 def area_of_a_triangle(a,b,c):
-    s = (a+b+c)/2
+    s = ((a+b+c)/2)
     area = (s*(s-a)*(s-b)*(s-b))**0.5
     return area
-print(area_of_a_triangle(1,2,4))
+print(area_of_a_triangle(int(input("Enter a:")),int(input("Enter b: ")),int(input("Enter c: "))))
 import cmath
 def quadratic_formula_solver(a,b,c):
-    x1 = (-b+cmath.sqrt(b**2-4*a*c))/2*a
-    x2= (-b-cmath.sqrt(b**2-4*a*c))/2*a
+    x1 = (-b+cmath.sqrt(b**2-4*a*c))/(2*a)
+    x2 = (-b-cmath.sqrt(b**2-4*a*c))/(2*a)
     print("The solutions are " + str(x1)+" and"+str(x2))
-print(quadratic_formula_solver(1,2,3))
+print(quadratic_formula_solver(int(input("Enter a: ")),int(input("Enter b: ")),int(input("Enter c: "))))
