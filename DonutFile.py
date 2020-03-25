@@ -1,17 +1,28 @@
 from KrispyKreme import Phone
 
+
 def cube_function(num):
     return float(num) ** 3
 
 
 print(cube_function(3))
-quad=4
+quad = 4
+
+
 def quadfunction(num):
-    return float(num)**quad
+    return float(num) ** quad
+
+
 print(quadfunction(2))
-def basketball_score(twopointers,foulshots,threepointers):
-    return int(twopointers)*2+int(foulshots)+int(threepointers)
-print(basketball_score(1,2,3))
+
+
+def basketball_score(twopointers, foulshots, threepointers):
+    return int(twopointers) * 2 + int(foulshots) + int(threepointers)
+
+
+print(basketball_score(1, 2, 3))
+
+
 def golf_score(par, number_of_shots):
     if int(number_of_shots) == 1:
         print("Hole in one")
@@ -118,7 +129,6 @@ things_I_want_for_my_birthday = ["Hiarcs", "Fat Fritz 17 from Chessbase", "a cou
                                  "A book by Everyman Chess", "Game Design Software"]
 print(things_I_want_for_my_birthday)
 
-
 import sys
 
 from termcolor import colored, cprint
@@ -135,14 +145,35 @@ for i in range(10):
     cprint(i, 'magenta', end=' ')
 
 cprint("Attention!", 'red', attrs=['bold'], file=sys.stderr)
-def area_of_a_triangle(a,b,c):
-    s = ((a+b+c)/2)
-    area = (s*(s-a)*(s-b)*(s-b))**0.5
+
+
+def area_of_a_triangle(a, b, c):
+    s = ((a + b + c) / 2)
+    area = (s * (s - a) * (s - b) * (s - b)) ** 0.5
     return area
-print(area_of_a_triangle(int(input("Enter a:")),int(input("Enter b: ")),int(input("Enter c: "))))
+
+
+print(area_of_a_triangle(float(input("Enter a:")), float(input("Enter b: ")), float(input("Enter c: "))))
 import cmath
-def quadratic_formula_solver(a,b,c):
-    x1 = (-b+cmath.sqrt(b**2-4*a*c))/(2*a)
-    x2 = (-b-cmath.sqrt(b**2-4*a*c))/(2*a)
-    print("The solutions are " + str(x1)+" and"+str(x2))
-print(quadratic_formula_solver(int(input("Enter a: ")),int(input("Enter b: ")),int(input("Enter c: "))))
+
+
+def quadratic_formula_solver(a, b, c):
+    x1 = (-b + cmath.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+    x2 = (-b - cmath.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+    print("The solutions are " + str(x1) + " and" + str(x2))
+
+
+print(quadratic_formula_solver(float(input("Enter a: ")), float(input("Enter b: ")), float(input("Enter c: "))))
+x2917 = "If Krispy Kreme opened up a shop in Huntington, I would be a regular there."
+print(x2917.partition("shop"))
+donut_Brand = "Krispy Kreme"
+location_Of_Donut_Brand = "Huntington"
+print(f'If {donut_Brand} opened up a shop in {location_Of_Donut_Brand}, I would be a regular there.')
+programming_Language = "Python"
+# This is a new method of string interpolation introduced in Python 3.6
+print(f"I wish I had could learn {programming_Language}")
+# This is an old method of string interpolation
+print("My mom and dad are watching %r." % r"Brad Pitt")
+# This is a newish method of string interpolation.
+print("My mom and dad are watching the movie {}.".format("Ad Astra"))
+
